@@ -1,19 +1,19 @@
 <script>
-    export let text = '';
+  export let text = '';
 </script>
 
 <style>
-    .btn-outline {
-        @apply font-semibold py-2 px-4;
-    }
+  .btn-outline {
+    @apply py-4 px-16 font-open transition duration-500;
+  }
 
-    .btn-outline-color {
-        @apply bg-transparent text-blue-700 border border-blue-500 rounded;
-    }
+  .btn-outline-color {
+    @apply bg-tutti-blue text-white rounded-full;
+  }
 
-    .btn-outline-color:hover {
-        @apply bg-red-500 text-white border-transparent;
-    }
+  .btn-outline-color:hover {
+    @apply bg-tutti-grey;
+  }
 </style>
 
 <button class="btn-outline btn-outline-color">{text}</button>
