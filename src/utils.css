@@ -2,3 +2,16 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@layer base {
+  h2 {
+    @apply text-5xl text-tutti-grey;
+  }
+  h3 {
+    @apply text-2xl text-tutti-grey text-center;
+  }
+  p {
+    @apply text-tutti-text text-justify;
+  }
+
+}
