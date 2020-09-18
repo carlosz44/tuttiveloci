@@ -5,7 +5,12 @@
 
 @layer base {
   h2 {
-    @apply text-5xl text-tutti-grey;
+    @apply text-3xl text-tutti-grey;
+  }
+  @screen sm {
+    h2 {
+      @apply text-5xl;
+    }
   }
   h3 {
     @apply text-2xl text-tutti-grey text-center;

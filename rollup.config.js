@@ -5,11 +5,14 @@ import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import postcss from 'rollup-plugin-postcss';
 import autoPreprocess from 'svelte-preprocess';
+import svelteSVG from 'rollup-plugin-svelte-svg';
 
 const production = !process.env.ROLLUP_WATCH;
 
 export default {
     input: 'src/main.js',
+    entry: 'src/input.js',
+	dest: 'dist/output.js',
     output: {
         sourcemap: true,
         format: 'iife',
@@ -44,6 +47,7 @@ export default {
                 importee === 'svelte' || importee.startsWith('svelte/'),
         }),
         commonjs(),
+        svelteSVG(),
 
         // Watch the `public` directory and refresh the
         // browser on changes when not in production

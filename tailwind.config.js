@@ -15,8 +15,7 @@ module.exports = {
       },
       backgroundImage: theme => ({
         'hero': "url('/images/tutti-veloci-hero.jpg')",
-        // 'about-1': "url('/images/about-1.jpg')",
-        // 'about-2': "url('/images/about-2.jpg')",
+        'cart': "url('/images/cart-background.jpg')",
       })
     },
   },
