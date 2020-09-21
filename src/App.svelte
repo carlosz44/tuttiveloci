@@ -3,6 +3,8 @@
   import Hero from './components/Hero.svelte';
   import Nosotros from './components/Nosotros.svelte';
   import Carta from './components/Carta.svelte';
+  import Contacto from './components/Contacto.svelte';
+  import Footer from './components/Footer.svelte';
   let menuItems = [
     { link: '#nosotros', name: 'Nosotros' },
     { link: '#carta', name: 'Carta' },
@@ -12,12 +14,9 @@
 
 <Header {menuItems} />
 <Hero />
-<main class="max-w-screen-xl mx-auto">
-  <Nosotros />
-  
-  <!-- TODO: Layout: hacerlo una clase -->
-  <!-- TODO: Contacto -->
-  <!-- TODO: Footer -->
-
+<main>
+  <Nosotros  />
+  <Carta />
+  <Contacto />
 </main>
-<Carta />
+<Footer />

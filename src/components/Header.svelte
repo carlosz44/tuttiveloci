@@ -24,7 +24,7 @@
     </nav>
   </div>
   <div class="md:hidden max-w-screen-xl mx-auto flex items-center justify-center">
-    <div class="flex items-center mr-6">
+    <div class="flex items-center">
       <a href="#inicio" class="w-16 lg:w-24">
         <img {src} alt={name} />
       </a>

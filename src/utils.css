@@ -5,7 +5,7 @@
 
 @layer base {
   h2 {
-    @apply text-3xl text-tutti-grey;
+    @apply text-3xl text-tutti-grey text-center;
   }
   @screen sm {
     h2 {
@@ -18,5 +18,8 @@
   p {
     @apply text-tutti-text text-justify;
   }
+}
 
+.main-layout {
+  @apply max-w-screen-xl mx-auto;
 }

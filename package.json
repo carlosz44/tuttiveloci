@@ -14,7 +14,8 @@
         "static-stories": "build-storybook -c .storybook -o .out"
     },
     "dependencies": {
-        "sirv-cli": "^0.4.4"
+        "sirv-cli": "^0.4.4",
+        "svelte-awesome": "^2.3.0"
     },
     "devDependencies": {
         "@babel/core": "^7.6.0",
