@@ -5,7 +5,8 @@ module.exports = {
         'tutti-blue': '#3abbd1',
         'tutti-grey': '#353535',
         'tutti-text': '#5A5A5A',
-        'header-bg': 'rgba(248, 248, 248, 0.15)',
+        'contact': '#F4F2F2',
+        'header': 'rgba(248, 248, 248, 0.15)',
       },
       fontFamily: {
         'nunito': ['Nunito', 'sans-serif'],

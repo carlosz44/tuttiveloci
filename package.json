@@ -15,7 +15,9 @@
     },
     "dependencies": {
         "sirv-cli": "^0.4.4",
-        "svelte-awesome": "^2.3.0"
+        "svelte-awesome": "^2.3.0",
+        "svelte-forms-lib": "^1.2.1",
+        "yup": "^0.29.3"
     },
     "devDependencies": {
         "@babel/core": "^7.6.0",

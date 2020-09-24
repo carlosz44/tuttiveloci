@@ -4,6 +4,12 @@
 @import 'tailwindcss/utilities';
 
 @layer base {
+  html {
+    @apply smooth;
+  }
+  body {
+    @apply font-nunito;
+  }
   h2 {
     @apply text-3xl text-tutti-grey text-center;
   }
@@ -20,6 +26,21 @@
   }
 }
 
+@layer utilities {
+  .smooth {
+    scroll-behavior: smooth;
+  }
+}
+
 .main-layout {
   @apply max-w-screen-xl mx-auto;
+}
+.social-button-bg {
+  @apply bg-tutti-grey h-16 w-16 rounded-full mx-1;
+}
+.contact-input {
+  @apply bg-contact px-6 py-4 mb-4 w-full;
+}
+.contact-input-text {
+  @apply bg-contact px-6 pt-4 pb-16 mb-4 w-full;
 }

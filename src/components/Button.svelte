@@ -1,5 +1,6 @@
 <script>
   export let text = '';
+  export let type;
 </script>
 
 <style>
@@ -16,4 +17,4 @@
   }
 </style>
 
-<button class="btn-outline btn-outline-color">{text}</button>
+<button class="btn-outline btn-outline-color" type={type} >{text}</button>

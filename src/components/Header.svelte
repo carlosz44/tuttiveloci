@@ -4,7 +4,7 @@
 	let name = 'Tutti Veloci';
 </script>
 
-<header class="fixed w-full bg-header-bg shadow-sm p-1">
+<header class="fixed w-full bg-header shadow-sm p-1">
   <!-- TODO: cambio de transparent a fondo con el scroll -->
   <div class="main-layout px-8 hidden md:flex items-center justify-between">
     <div class="flex items-center mr-6">
