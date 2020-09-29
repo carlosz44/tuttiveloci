@@ -1,5 +1,5 @@
 <script>
-  import Button from './Button.svelte';
+  import Button from './ui/Button.svelte';
   import { Form, Field, ErrorMessage } from "svelte-forms-lib";
   import * as yup from "yup";
 

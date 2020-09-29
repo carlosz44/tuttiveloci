@@ -36,11 +36,17 @@
   @apply max-w-screen-xl mx-auto;
 }
 .social-button-bg {
-  @apply bg-tutti-grey h-16 w-16 rounded-full mx-1;
+  @apply bg-tutti-grey rounded-full mx-1 p-3 flex transition duration-500;
+}
+.social-button-bg:hover {
+  @apply bg-tutti-blue;
 }
 .contact-input {
   @apply bg-contact px-6 py-4 mb-4 w-full;
 }
 .contact-input-text {
   @apply bg-contact px-6 pt-4 pb-16 mb-4 w-full;
+}
+.footer-icons {
+  @apply w-6 h-6;
 }

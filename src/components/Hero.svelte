@@ -1,5 +1,5 @@
 <script>
-  import Button from './Button.svelte';
+  import Button from './ui/Button.svelte';
   let src = 'images/tutti-veloci-logo.png';
 	let name = 'Tutti Veloci';
 </script>
