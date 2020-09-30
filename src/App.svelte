@@ -5,6 +5,7 @@
   import Carta from './components/Carta.svelte';
   import Contacto from './components/Contacto.svelte';
   import Footer from './components/Footer.svelte';
+  let y = 0;
   let menuItems = [
     { link: '#nosotros', name: 'Nosotros' },
     { link: '#carta', name: 'Carta' },
@@ -12,7 +13,9 @@
   ];
 </script>
 
-<Header {menuItems} />
+<svelte:window bind:scrollY={y}/>
+
+<Header {menuItems} {y} />
 <Hero />
 <main>
   <Nosotros  />

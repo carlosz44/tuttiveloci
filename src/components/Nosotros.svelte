@@ -6,7 +6,7 @@
 	let textabout2 = 'Nos especializamos en brindarte la mejor carta con muchas opciones especiales para coffee breaks, desayunos corporativos, caterings corporativos y eventos especiales.';
 </script>
 
-<section id="nosotros" class="main-layout py-16 flex flex-col items-center">
+<section id="nosotros" class="main-layout py-20 flex flex-col items-center">
   <img src={img} alt="Nosotros" class="w-32 pb-8">
   <h2>Nosotros</h2>
   <p class="my-8 px-4">Apasionados por brindarte la mejor experiencia gastronómica.</p>

@@ -1,7 +1,7 @@
 <script>
   import Button from './ui/Button.svelte';
-  import { Form, Field, ErrorMessage } from "svelte-forms-lib";
-  import * as yup from "yup";
+  import { Form, Field, ErrorMessage } from 'svelte-forms-lib';
+  import * as yup from 'yup';
 
   const formProps = {
     initialValues: { name: "", email: "", message: "" },

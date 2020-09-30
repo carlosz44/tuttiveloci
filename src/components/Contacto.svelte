@@ -5,7 +5,7 @@
   let alt = 'Realiza tu pedido';
 </script>
 
-<section id="contacto" class="main-layout mx-auto py-16 flex flex-col items-center">
+<section id="contacto" class="main-layout mx-auto py-20 flex flex-col items-center">
   <img src={img} alt="Contáctanos" class="w-32 pb-8">
   <h2>Contáctanos</h2>
   <div class="flex flex-row items-center w-full px-4 py-8">

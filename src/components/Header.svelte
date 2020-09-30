@@ -1,11 +1,12 @@
 <script>
   export let menuItems = [];
+  export let y = 0;
   let src = 'images/logo.png';
-	let name = 'Tutti Veloci';
+  let name = 'Tutti Veloci';
+
 </script>
 
-<header class="fixed w-full bg-header shadow-sm p-1">
-  <!-- TODO: cambio de transparent a fondo con el scroll -->
+<header class="fixed w-full p-1 transition duration-500 {y < 50 ? 'bg-transparent': 'bg-header shadow-sm'}">
   <div class="main-layout px-8 hidden md:flex items-center justify-between">
     <div class="flex items-center mr-6">
       <a href="#inicio" class="w-16">
