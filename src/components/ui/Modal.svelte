@@ -5,13 +5,12 @@
   export let src = '';
   export let description = '';
   let visible = false;
-  let mountedT = () => {
-  };
+  let mountedT = () => {};
   const toggle = () => {
     visible = !visible;
     mountedT();
   };
-  onMount(()=>{
+  onMount(() => {
     let defaultOverflow = document.body.style.overflow;
     mountedT = () => {
       if (visible) {
@@ -20,35 +19,13 @@
         document.body.style.overflow = defaultOverflow;
       }
     };
-  })
+  });
 </script>
-
-<div class="static cursor-zoom-in" on:click={toggle}>
-  <slot/>
-</div>
-
-{#if visible}
-  <div class="cover">
-    <div class="svelte-lightbox-overlay" style={style} transition:fade={{duration:500}} on:click={toggle}>
-      <div class="svelte-lightbox" on:click={toggle}>
-        <div class="flex justify-end">
-          <button on:click={toggle} class="text-white hover:text-gray-400 text-5xl tutti-transitions" size="xs">
-            ×
-          </button>
-        </div>
-        <div class="max-h-screen">
-          <img class="overflow-auto" {src} alt={description} >
-          <p class="text-center text-white">{description}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-{/if}
 
 <style>
   .cover {
     position: fixed;
-    z-index: 1000000!important;
+    z-index: 1000000 !important;
     background-color: rgba(43, 39, 45, 0.87);
     top: 0;
     bottom: 0;
@@ -76,3 +53,32 @@
     z-index: 1000002;
   }
 </style>
+
+<div class="static cursor-zoom-in" on:click={toggle}>
+  <slot />
+</div>
+
+{#if visible}
+  <div class="cover">
+    <div
+      class="svelte-lightbox-overlay"
+      {style}
+      transition:fade={{ duration: 500 }}
+      on:click={toggle}>
+      <div class="svelte-lightbox" on:click={toggle}>
+        <div class="flex justify-end">
+          <button
+            on:click={toggle}
+            class="text-white hover:text-gray-400 text-5xl tutti-transitions"
+            size="xs">
+            ×
+          </button>
+        </div>
+        <div class="max-h-screen overflow-scroll">
+          <img class="overflow-auto" {src} alt={description} />
+          <p class="text-center text-white">{description}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+{/if}
