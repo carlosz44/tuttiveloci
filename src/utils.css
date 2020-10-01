@@ -39,7 +39,7 @@
   @apply bg-tutti-grey rounded-full mx-1 p-3 flex transition duration-500;
 }
 .social-button-bg:hover {
-  @apply bg-tutti-blue;
+  @apply bg-tutti-red;
 }
 .contact-input {
   @apply bg-contact px-6 py-4 mb-4 w-full;
@@ -49,4 +49,7 @@
 }
 .footer-icons {
   @apply w-6 h-6;
+}
+.tutti-transitions {
+  @apply transition duration-500;
 }

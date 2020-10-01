@@ -9,12 +9,12 @@
   }
 
   .btn-outline-color {
-    @apply bg-tutti-blue text-white rounded-full;
+    @apply bg-tutti-orange text-white rounded-full;
   }
 
   .btn-outline-color:hover {
-    @apply bg-tutti-grey;
+    @apply bg-tutti-red;
   }
 </style>
 
-<button class="btn-outline btn-outline-color" type={type} >{text}</button>
+<button class="btn-outline btn-outline-color" type={type}>{text}</button>
