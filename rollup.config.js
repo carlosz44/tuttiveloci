@@ -8,6 +8,9 @@ import autoPreprocess from 'svelte-preprocess';
 import svelteSVG from 'rollup-plugin-svelte-svg';
 import {config} from 'dotenv';
 import replace from '@rollup/plugin-replace';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -39,13 +42,8 @@ export default {
         }),
 
         replace({
-            // stringify the object       
-            __tutti: JSON.stringify({
-                env: {
-                    isProd: production,
-                    ...config().parsed // attached the .env config
-                }
-            }),
+            T_PHONE: JSON.stringify(process.env.T_PHONE),
+            T_MAIL: JSON.stringify(process.env.T_MAIL)
         }),
 
         // If you have external dependencies installed from

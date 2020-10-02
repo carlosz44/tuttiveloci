@@ -3,7 +3,7 @@
   import FieldArea from './ui/FieldArea.svelte';
   import { Form, Field, ErrorMessage } from 'svelte-forms-lib';
   import * as yup from 'yup';
-  let phone = __tutti.env.T_PHONE;
+  let phone = T_PHONE;
   console.log(phone);
 
   const formProps = {

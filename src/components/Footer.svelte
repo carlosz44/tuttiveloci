@@ -3,8 +3,8 @@
   import { facebook, instagram, whatsapp, paperPlaneO } from 'svelte-awesome/icons';
   let ig = 'https://www.instagram.com/tutti.veloci.peru/';
   let fb = 'https://www.facebook.com/Tutti-Veloci-104565128022977';
-  const wa = `https://wa.me/${__tutti.env.T_PHONE}`;
-  let mail = `mailto:${__tutti.env.T_MAIL}`;
+  const wa = `https://wa.me/${T_PHONE}`;
+  let mail = `mailto:${T_MAIL}`;
 </script>
 
 <footer class="main-layout">
