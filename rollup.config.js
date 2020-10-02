@@ -6,6 +6,8 @@ import { terser } from 'rollup-plugin-terser';
 import postcss from 'rollup-plugin-postcss';
 import autoPreprocess from 'svelte-preprocess';
 import svelteSVG from 'rollup-plugin-svelte-svg';
+import {config} from 'dotenv';
+import replace from '@rollup/plugin-replace';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -34,6 +36,16 @@ export default {
         }),
         postcss({
             extract: 'public/utils.css',
+        }),
+
+        replace({
+            // stringify the object       
+            __tutti: JSON.stringify({
+                env: {
+                    isProd: production,
+                    ...config().parsed // attached the .env config
+                }
+            }),
         }),
 
         // If you have external dependencies installed from

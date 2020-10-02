@@ -47,7 +47,7 @@
   }
   .svelte-lightbox {
     position: absolute;
-    background-color: transparent;
+    /* background-color: transparent; */
     max-width: 90%;
     max-height: 90%;
     z-index: 1000002;

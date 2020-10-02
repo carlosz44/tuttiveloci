@@ -16,6 +16,7 @@
 <svelte:window bind:scrollY={y}/>
 
 <Header {menuItems} {y} />
+<!-- TODO: Verificar scroll en componente header -->
 <Hero />
 <main>
   <Nosotros  />
